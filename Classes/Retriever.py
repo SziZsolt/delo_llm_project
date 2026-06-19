@@ -7,7 +7,7 @@ class Retriever:
         self.embedding_store = embedding_store
         self.embed_model = embed_model
 
-    def cosine_similarity(self, arr_1: np.ndarray, arr_2: np.ndarray) -> float:
+    def cosine_similarity(self, arr_1: list[float], arr_2: list[float]) -> float:
         arr_1 = np.asarray(arr_1)
         arr_2 = np.asarray(arr_2)
         dot_product = np.dot(arr_1, arr_2)

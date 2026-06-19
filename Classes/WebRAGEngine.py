@@ -1,0 +1,23 @@
+from Classes.BaseRAGEngine import BaseRAGEngine
+from Classes.WebSearchTool import WebSearchTool
+
+class WebRAGEngine(BaseRAGEngine):
+    def __init__(self, web_search_tool: WebSearchTool, model):
+        super().__init__(model)
+        self.web_search_tool = web_search_tool
+
+    def build_context(self, web_results: list[dict]) -> str:
+        context_parts = []
+        for result in web_results:
+            title = result.get('title', '')
+            href = result.get('href', '')
+            body = result.get('body', '')
+            context_parts.append(f'Title: {title}\nURL: {href}\n{body}')
+        return '\n\n---\n\n'.join(context_parts)
+
+    def answer(self, question: str) -> dict:
+        web_results = self.web_search_tool.search(f'Gloomhaven rules: {question}')
+        context = self.build_context(web_results)
+        answer = self.answer_with_context(question, context)
+        answer['source_type'] = 'web'
+        return answer

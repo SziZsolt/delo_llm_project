@@ -1,0 +1,36 @@
+from Classes.BaseRAGEngine import BaseRAGEngine
+from Classes.LocalRAGEngine import LocalRAGEngine
+from Classes.WebRAGEngine import WebRAGEngine
+
+class MyAgent:
+    def __init__(self, local_rag_engine: LocalRAGEngine,
+                 web_rag_engine: WebRAGEngine,
+                 retrieval_threshold: float):
+        self.local_rag_engine = local_rag_engine
+        self.web_rag_engine = web_rag_engine
+        self.retrieval_threshold = retrieval_threshold
+        self.fallback_explanation_keywords = ['not found','no relevant information',
+                                              'insufficient information', 'unable to find',
+                                              'not available']
+
+    def fallback(self, local_answer: dict) -> bool:
+        best_score = local_answer.get('best_retrieval_score', 0.0)
+        explanation = local_answer.get('explanation', '').lower()
+        played_correctly = local_answer.get('was_played_correctly', None)
+        if best_score < self.retrieval_threshold:
+            return True
+        if played_correctly is None:
+            return True
+        if any(keyword in explanation for keyword in self.fallback_explanation_keywords):
+            return True
+        return False
+
+    def answer(self, question: str, top_k: int) -> dict:
+        local_answer = self.local_rag_engine.answer(question, top_k)
+        if not self.fallback(local_answer):
+            return local_answer
+        web_answer = self.web_rag_engine.answer(question, top_k)
+        web_answer['fallback_reason'] = 'Local retrieval insufficient, falling back to web search.'
+        web_answer['local_answer'] = local_answer
+        return web_answer
+

@@ -15,9 +15,10 @@ class WebRAGEngine(BaseRAGEngine):
             context_parts.append(f'Title: {title}\nURL: {href}\n{body}')
         return '\n\n---\n\n'.join(context_parts)
 
-    def answer(self, question: str) -> dict:
-        web_results = self.web_search_tool.search(f'Gloomhaven rules: {question}')
+    def answer(self, question: str, top_k: int) -> dict:
+        web_results = self.web_search_tool.search(f'Gloomhaven rules: {question}', max_results=top_k)
         context = self.build_context(web_results)
         answer = self.answer_with_context(question, context)
         answer['source_type'] = 'web'
+        answer['sources'] = web_results
         return answer

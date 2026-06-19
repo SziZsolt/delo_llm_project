@@ -2,14 +2,12 @@ from ddgs import DDGS
 
 
 class WebSearchTool:
-    def __init__(self, max_results: int):
-        self.max_results = max_results
-
-    def search(self, query: str) -> list[dict]:
+    @staticmethod
+    def search(query: str, max_results: int) -> list[dict]:
         results = []
         try:
             with DDGS() as search_engine:
-                for result in search_engine.text(query, max_results=self.max_results):
+                for result in search_engine.text(query, max_results=max_results):
                     results.append({
                         'title': result.get('title', ''),
                         'href': result.get('href', ''),

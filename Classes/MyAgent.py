@@ -5,10 +5,14 @@ from Classes.WebRAGEngine import WebRAGEngine
 class MyAgent:
     def __init__(self, local_rag_engine: LocalRAGEngine,
                  web_rag_engine: WebRAGEngine,
-                 retrieval_threshold: float):
+                 retrieval_threshold: float,
+                 local_top_k: int,
+                 web_top_k: int):
         self.local_rag_engine = local_rag_engine
         self.web_rag_engine = web_rag_engine
         self.retrieval_threshold = retrieval_threshold
+        self.local_top_k = local_top_k
+        self.web_top_k = web_top_k
         self.fallback_explanation_keywords = ['not found','no relevant information',
                                               'insufficient information', 'unable to find',
                                               'not available']
@@ -25,11 +29,11 @@ class MyAgent:
             return True
         return False
 
-    def answer(self, question: str, top_k: int) -> dict:
-        local_answer = self.local_rag_engine.answer(question, top_k)
+    def answer(self, question: str) -> dict:
+        local_answer = self.local_rag_engine.answer(question, self.local_top_k)
         if not self.fallback(local_answer):
             return local_answer
-        web_answer = self.web_rag_engine.answer(question, top_k)
+        web_answer = self.web_rag_engine.answer(question, self.web_top_k)
         web_answer['fallback_reason'] = 'Local retrieval insufficient, falling back to web search.'
         web_answer['local_answer'] = local_answer
         return web_answer

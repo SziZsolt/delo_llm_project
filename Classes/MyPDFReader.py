@@ -1,16 +1,20 @@
 from pypdf import PdfReader
 import re
-from Page import Page
+from DataClasses.Page import Page
 
 class MyPDFReader:
     def __init__(self, file_path: str):
         self.file_path = file_path
         self.reader = PdfReader(self.file_path)
-        self.pages = self.load_pages(self.reader)
+        self.pages = self.load_pages()
     
     def process_page(self, page_text: str) -> str:
         page_text = re.sub(r'\s+', ' ', page_text)
         page_text = page_text.replace('\n', ' ')
+        page_text = "".join(
+        ch for ch in page_text
+        if ord(ch) < 128
+    )
         page_text = page_text.strip()
         return page_text
     

@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "We attacked a monster and reduced it to 0 HP. Then we applied retaliate damage to the attacker. Did we play this correctly?",
+    "expected_was_played_correctly": false,
+    "expected_category": "Combat",
+    "prediction": {
+      "explanation": "The user did not play the retaliate correctly.",
+      "was_played_correctly": false,
+      "category": "Combat",
+      "source_type": "rulebook",
+      "sources": [
+        {
+          "page_number": 20,
+          "chunk_number": 3,
+          "score": 0.607
+        },
+        {
+          "page_number": 26,
+          "chunk_number": 2,
+          "score": 0.595
+        },
+        {
+          "page_number": 26,
+          "chunk_number": 3,
+          "score": 0.586
+        },
+        {
+          "page_number": 4,
+          "chunk_number": 2,
+          "score": 0.581
+        },
+        {
+          "page_number": 28,
+          "chunk_number": 4,
+          "score": 0.578
+        }
+      ],
+      "best_retrieval_score": 0.607
+    }
+  },
+  {
+    "id": 2,
+    "question": "A character played the top action of one card and the bottom action of another card on the same turn. Did we play this correctly?",
+    "expected_was_played_correctly": true,
+    "expected_category": "Character",
+    "prediction": {
+      "explanation": "...",
+      "was_played_correctly": true,
+      "category": "Combat",
+      "source_type": "rulebook",
+      "sources": [
+        {
+          "page_number": 18,
+          "chunk_number": 1,
+          "score": 0.774
+        },
+        {
+          "page_number": 7,
+          "chunk_number": 2,
+          "score": 0.681
+        },
+        {
+          "page_number": 7,
+          "chunk_number": 1,
+          "score": 0.646
+        },
+        {
+          "page_number": 18,
+          "chunk_number": 2,
+          "score": 0.64
+        },
+        {
+          "page_number": 17,
+          "chunk_number": 1,
+          "score": 0.629
+        }
+      ],
+      "best_retrieval_score": 0.774
+    }
+  },
+  {
+    "id": 3,
+    "question": "A monster was reduced to 0 HP, but we still applied the poison condition from the same attack afterwards. Did we play this correctly?",
+    "expected_was_played_correctly": false,
+    "expected_category": "Combat",
+    "prediction": {
+      "explanation": "The user did not handle the situation correctly.",
+      "was_played_correctly": false,
+      "category": "Scenario",
+      "source_type": "rulebook",
+      "sources": [
+        {
+          "page_number": 20,
+          "chunk_number": 3,
+          "score": 0.612
+        },
+        {
+          "page_number": 22,
+          "chunk_number": 3,
+          "score": 0.586
+        },
+        {
+          "page_number": 22,
+          "chunk_number": 4,
+          "score": 0.583
+        },
+        {
+          "page_number": 22,
+          "chunk_number": 5,
+          "score": 0.554
+        },
+        {
+          "page_number": 4,
+          "chunk_number": 2,
+          "score": 0.553
+        }
+      ],
+      "best_retrieval_score": 0.612
+    }
+  },
+  {
+    "id": 4,
+    "question": "During setup, we placed monsters and map tiles according to the scenario book before the first round started. Did we play this correctly?",
+    "expected_was_played_correctly": true,
+    "expected_category": "BoardGameSetup",
+    "prediction": {
+      "explanation": "The user's question is about whether they placed the monsters and map tiles according to the scenario book before the first round started.",
+      "was_played_correctly": true,
+      "category": "Scenario",
+      "source_type": "rulebook",
+      "sources": [
+        {
+          "page_number": 5,
+          "chunk_number": 1,
+          "score": 0.639
+        },
+        {
+          "page_number": 13,
+          "chunk_number": 1,
+          "score": 0.627
+        },
+        {
+          "page_number": 13,
+          "chunk_number": 2,
+          "score": 0.609
+        },
+        {
+          "page_number": 2,
+          "chunk_number": 3,
+          "score": 0.583
+        },
+        {
+          "page_number": 50,
+          "chunk_number": 3,
+          "score": 0.582
+        }
+      ],
+      "best_retrieval_score": 0.639
+    }
+  },
+  {
+    "id": 5,
+    "question": "We let a summoned figure act immediately in the same round it was summoned. Did we play this correctly?",
+    "expected_was_played_correctly": false,
+    "expected_category": "Character",
+    "prediction": {
+      "explanation": "explanation goes here",
+      "was_played_correctly": true,
+      "category": "Combat",
+      "source_type": "rulebook",
+      "sources": [
+        {
+          "page_number": 26,
+          "chunk_number": 2,
+          "score": 0.587
+        },
+        {
+          "page_number": 26,
+          "chunk_number": 1,
+          "score": 0.567
+        },
+        {
+          "page_number": 18,
+          "chunk_number": 1,
+          "score": 0.556
+        },
+        {
+          "page_number": 31,
+          "chunk_number": 4,
+          "score": 0.555
+        },
+        {
+          "page_number": 16,
+          "chunk_number": 1,
+          "score": 0.549
+        }
+      ],
+      "best_retrieval_score": 0.587
+    }
+  },
+  {
+    "id": 6,
+    "question": "A monster with Shield 1 was attacked for 4 damage, so we reduced the damage to 3. Did we play this correctly?",
+    "expected_was_played_correctly": true,
+    "expected_category": "Combat",
+    "prediction": {
+      "explanation": "The attack was reduced to 3 because of the shield modifier.",
+      "was_played_correctly": true,
+      "category": "Combat",
+      "source_type": "rulebook",
+      "sources": [
+        {
+          "page_number": 20,
+          "chunk_number": 3,
+          "score": 0.678
+        },
+        {
+          "page_number": 44,
+          "chunk_number": 4,
+          "score": 0.625
+        },
+        {
+          "page_number": 2,
+          "chunk_number": 9,
+          "score": 0.609
+        },
+        {
+          "page_number": 20,
+          "chunk_number": 2,
+          "score": 0.597
+        },
+        {
+          "page_number": 31,
+          "chunk_number": 2,
+          "score": 0.586
+        }
+      ],
+      "best_retrieval_score": 0.678
+    }
+  },
+  {
+    "id": 7,
+    "question": "We allowed a character to recover all discarded cards during a long rest and heal 2 hit points. Did we play this correctly?",
+    "expected_was_played_correctly": true,
+    "expected_category": "Character",
+    "prediction": {
+      "explanation": "The user handled the situation correctly.",
+      "was_played_correctly": true,
+      "category": "Scenario",
+      "source_type": "rulebook",
+      "sources": [
+        {
+          "page_number": 17,
+          "chunk_number": 3,
+          "score": 0.756
+        },
+        {
+          "page_number": 17,
+          "chunk_number": 5,
+          "score": 0.708
+        },
+        {
+          "page_number": 17,
+          "chunk_number": 4,
+          "score": 0.699
+        },
+        {
+          "page_number": 17,
+          "chunk_number": 2,
+          "score": 0.694
+        },
+        {
+          "page_number": 2,
+          "chunk_number": 5,
+          "score": 0.672
+        }
+      ],
+      "best_retrieval_score": 0.756
+    }
+  },
+  {
+    "id": 8,
+    "question": "A monster focused on the closest enemy first, using initiative as a tie-breaker. Did we play this correctly?",
+    "expected_was_played_correctly": true,
+    "expected_category": "Combat",
+    "prediction": {
+      "explanation": "The user is asking whether the handling of the monster's initiative and focus was correct.",
+      "was_played_correctly": true,
+      "category": "Combat",
+      "source_type": "rulebook",
+      "sources": [
+        {
+          "page_number": 30,
+          "chunk_number": 1,
+          "score": 0.717
+        },
+        {
+          "page_number": 18,
+          "chunk_number": 4,
+          "score": 0.71
+        },
+        {
+          "page_number": 18,
+          "chunk_number": 3,
+          "score": 0.709
+        },
+        {
+          "page_number": 29,
+          "chunk_number": 2,
+          "score": 0.684
+        },
+        {
+          "page_number": 29,
+          "chunk_number": 3,
+          "score": 0.675
+        }
+      ],
+      "best_retrieval_score": 0.717
+    }
+  },
+  {
+    "id": 9,
+    "question": "We gave experience points to a character every time they killed a monster, even though the ability card did not grant experience. Did we play this correctly?",
+    "expected_was_played_correctly": false,
+    "expected_category": "Character",
+    "prediction": {
+      "explanation": "the rulebook says that characters do not automatically gain experience from killing monsters. Only using specific actions awards experience.",
+      "was_played_correctly": true,
+      "category": "Combat",
+      "source_type": "rulebook",
+      "sources": [
+        {
+          "page_number": 27,
+          "chunk_number": 3,
+          "score": 0.672
+        },
+        {
+          "page_number": 27,
+          "chunk_number": 2,
+          "score": 0.62
+        },
+        {
+          "page_number": 33,
+          "chunk_number": 4,
+          "score": 0.619
+        },
+        {
+          "page_number": 33,
+          "chunk_number": 3,
+          "score": 0.609
+        },
+        {
+          "page_number": 44,
+          "chunk_number": 3,
+          "score": 0.604
+        }
+      ],
+      "best_retrieval_score": 0.672
+    }
+  },
+  {
+    "id": 10,
+    "question": "At the end of a scenario, we looted all remaining money tokens automatically. Did we play this correctly?",
+    "expected_was_played_correctly": false,
+    "expected_category": "Scenario",
+    "prediction": {
+      "explanation": "The user's action of looting all remaining money tokens at the end of a scenario was correct.",
+      "was_played_correctly": true,
+      "category": "Scenario",
+      "source_type": "rulebook",
+      "sources": [
+        {
+          "page_number": 33,
+          "chunk_number": 1,
+          "score": 0.658
+        },
+        {
+          "page_number": 33,
+          "chunk_number": 2,
+          "score": 0.622
+        },
+        {
+          "page_number": 27,
+          "chunk_number": 2,
+          "score": 0.583
+        },
+        {
+          "page_number": 33,
+          "chunk_number": 3,
+          "score": 0.546
+        },
+        {
+          "page_number": 13,
+          "chunk_number": 3,
+          "score": 0.545
+        }
+      ],
+      "best_retrieval_score": 0.658
+    }
+  },
+  {
+    "id": 11,
+    "question": "A ranged attack was made against an adjacent enemy, and we applied disadvantage to the attack. Did we play this correctly?",
+    "expected_was_played_correctly": true,
+    "expected_category": "Combat",
+    "prediction": {
+      "explanation": "",
+      "was_played_correctly": false,
+      "category": "Combat",
+      "source_type": "rulebook",
+      "sources": [
+        {
+          "page_number": 21,
+          "chunk_number": 2,
+          "score": 0.723
+        },
+        {
+          "page_number": 19,
+          "chunk_number": 2,
+          "score": 0.614
+        },
+        {
+          "page_number": 20,
+          "chunk_number": 1,
+          "score": 0.603
+        },
+        {
+          "page_number": 30,
+          "chunk_number": 2,
+          "score": 0.594
+        },
+        {
+          "page_number": 21,
+          "chunk_number": 4,
+          "score": 0.589
+        }
+      ],
+      "best_retrieval_score": 0.723
+    }
+  },
+  {
+    "id": 12,
+    "question": "We allowed a character to choose any two ability cards from their hand at the start of the round. Did we play this correctly?",
+    "expected_was_played_correctly": true,
+    "expected_category": "Character",
+    "prediction": {
+      "explanation": "The user's action was correct",
+      "was_played_correctly": true,
+      "category": "Character",
+      "source_type": "rulebook",
+      "sources": [
+        {
+          "page_number": 7,
+          "chunk_number": 1,
+          "score": 0.75
+        },
+        {
+          "page_number": 12,
+          "chunk_number": 2,
+          "score": 0.671
+        },
+        {
+          "page_number": 18,
+          "chunk_number": 2,
+          "score": 0.656
+        },
+        {
+          "page_number": 10,
+          "chunk_number": 1,
+          "score": 0.636
+        },
+        {
+          "page_number": 18,
+          "chunk_number": 1,
+          "score": 0.633
+        }
+      ],
+      "best_retrieval_score": 0.75
+    }
+  },
+  {
+    "id": 13,
+    "question": "When a character became exhausted, we kept their summon on the board. Did we play this correctly?",
+    "expected_was_played_correctly": false,
+    "expected_category": "Character",
+    "prediction": {
+      "explanation": "",
+      "was_played_correctly": false,
+      "category": "Scenario",
+      "source_type": "rulebook",
+      "sources": [
+        {
+          "page_number": 28,
+          "chunk_number": 3,
+          "score": 0.631
+        },
+        {
+          "page_number": 28,
+          "chunk_number": 2,
+          "score": 0.558
+        },
+        {
+          "page_number": 33,
+          "chunk_number": 3,
+          "score": 0.547
+        },
+        {
+          "page_number": 50,
+          "chunk_number": 1,
+          "score": 0.535
+        },
+        {
+          "page_number": 26,
+          "chunk_number": 1,
+          "score": 0.53
+        }
+      ],
+      "best_retrieval_score": 0.631
+    }
+  },
+  {
+    "id": 14,
+    "question": "We spawned all monsters as elites regardless of the scenario setup instructions. Did we play this correctly?",
+    "expected_was_played_correctly": false,
+    "expected_category": "BoardGameSetup",
+    "prediction": {
+      "explanation": "The user's action of spawning all monsters as elites regardless of the scenario setup instructions.",
+      "was_played_correctly": false,
+      "category": "Scenario",
+      "source_type": "rulebook",
+      "sources": [
+        {
+          "page_number": 29,
+          "chunk_number": 1,
+          "score": 0.622
+        },
+        {
+          "page_number": 13,
+          "chunk_number": 2,
+          "score": 0.614
+        },
+        {
+          "page_number": 34,
+          "chunk_number": 5,
+          "score": 0.584
+        },
+        {
+          "page_number": 52,
+          "chunk_number": 1,
+          "score": 0.581
+        },
+        {
+          "page_number": 34,
+          "chunk_number": 2,
+          "score": 0.572
+        }
+      ],
+      "best_retrieval_score": 0.622
+    }
+  },
+  {
+    "id": 15,
+    "question": "After completing the scenario objective, we ended the scenario successfully according to the scenario's success condition. Did we play this correctly?",
+    "expected_was_played_correctly": true,
+    "expected_category": "Scenario",
+    "prediction": {
+      "explanation": "Only the rulebook context that is relevant to the question is considered.",
+      "was_played_correctly": false,
+      "category": "Scenario",
+      "source_type": "rulebook",
+      "sources": [
+        {
+          "page_number": 33,
+          "chunk_number": 1,
+          "score": 0.641
+        },
+        {
+          "page_number": 12,
+          "chunk_number": 1,
+          "score": 0.625
+        },
+        {
+          "page_number": 33,
+          "chunk_number": 2,
+          "score": 0.621
+        },
+        {
+          "page_number": 41,
+          "chunk_number": 3,
+          "score": 0.601
+        },
+        {
+          "page_number": 33,
+          "chunk_number": 3,
+          "score": 0.586
+        }
+      ],
+      "best_retrieval_score": 0.641
+    }
+  }
+]

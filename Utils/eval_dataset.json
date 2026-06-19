@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "question": "We attacked a monster and reduced it to 0 HP. Then we applied retaliate damage to the attacker. Did we play this correctly?",
+    "expected_was_played_correctly": false,
+    "expected_category": "Combat"
+  },
+  {
+    "id": 2,
+    "question": "A character played the top action of one card and the bottom action of another card on the same turn. Did we play this correctly?",
+    "expected_was_played_correctly": true,
+    "expected_category": "Character"
+  },
+  {
+    "id": 3,
+    "question": "A monster was reduced to 0 HP, but we still applied the poison condition from the same attack afterwards. Did we play this correctly?",
+    "expected_was_played_correctly": false,
+    "expected_category": "Combat"
+  },
+  {
+    "id": 4,
+    "question": "During setup, we placed monsters and map tiles according to the scenario book before the first round started. Did we play this correctly?",
+    "expected_was_played_correctly": true,
+    "expected_category": "BoardGameSetup"
+  },
+  {
+    "id": 5,
+    "question": "We let a summoned figure act immediately in the same round it was summoned. Did we play this correctly?",
+    "expected_was_played_correctly": false,
+    "expected_category": "Character"
+  },
+  {
+    "id": 6,
+    "question": "A monster with Shield 1 was attacked for 4 damage, so we reduced the damage to 3. Did we play this correctly?",
+    "expected_was_played_correctly": true,
+    "expected_category": "Combat"
+  },
+  {
+    "id": 7,
+    "question": "We allowed a character to recover all discarded cards during a long rest and heal 2 hit points. Did we play this correctly?",
+    "expected_was_played_correctly": true,
+    "expected_category": "Character"
+  },
+  {
+    "id": 8,
+    "question": "A monster focused on the closest enemy first, using initiative as a tie-breaker. Did we play this correctly?",
+    "expected_was_played_correctly": true,
+    "expected_category": "Combat"
+  },
+  {
+    "id": 9,
+    "question": "We gave experience points to a character every time they killed a monster, even though the ability card did not grant experience. Did we play this correctly?",
+    "expected_was_played_correctly": false,
+    "expected_category": "Character"
+  },
+  {
+    "id": 10,
+    "question": "At the end of a scenario, we looted all remaining money tokens automatically. Did we play this correctly?",
+    "expected_was_played_correctly": false,
+    "expected_category": "Scenario"
+  },
+  {
+    "id": 11,
+    "question": "A ranged attack was made against an adjacent enemy, and we applied disadvantage to the attack. Did we play this correctly?",
+    "expected_was_played_correctly": true,
+    "expected_category": "Combat"
+  },
+  {
+    "id": 12,
+    "question": "We allowed a character to choose any two ability cards from their hand at the start of the round. Did we play this correctly?",
+    "expected_was_played_correctly": true,
+    "expected_category": "Character"
+  },
+  {
+    "id": 13,
+    "question": "When a character became exhausted, we kept their summon on the board. Did we play this correctly?",
+    "expected_was_played_correctly": false,
+    "expected_category": "Character"
+  },
+  {
+    "id": 14,
+    "question": "We spawned all monsters as elites regardless of the scenario setup instructions. Did we play this correctly?",
+    "expected_was_played_correctly": false,
+    "expected_category": "BoardGameSetup"
+  },
+  {
+    "id": 15,
+    "question": "After completing the scenario objective, we ended the scenario successfully according to the scenario's success condition. Did we play this correctly?",
+    "expected_was_played_correctly": true,
+    "expected_category": "Scenario"
+  }
+]

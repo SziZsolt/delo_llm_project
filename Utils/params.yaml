@@ -1,0 +1,10 @@
+llm_model_name: Qwen/Qwen3-1.7B
+embedder_model_name: Qwen/Qwen3-Embedding-0.6B
+pdf_name: rulebook.pdf
+Chunker:
+ chunk_size: 1000
+ overlap: 200
+MyAgent:
+  retrieval_threshold: 0.4
+  local_top_k: 5
+  web_top_k: 5

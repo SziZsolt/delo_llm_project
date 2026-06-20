@@ -1,6 +1,6 @@
-from DataClasses.Page import Page
-from DataClasses.Chunk import Chunk
-from Classes.DocumentProcessing.MyPDFReader import MyPDFReader
+from gloomhaven_agent.document_processing.Page import Page
+from gloomhaven_agent.document_processing.Chunk import Chunk
+from gloomhaven_agent.document_processing.MyPDFReader import MyPDFReader
 
 class Chunker:
     def __init__(self, pdf_reader: MyPDFReader, chunk_size: int, overlap: int):

@@ -1,6 +1,6 @@
-from Classes.Retrieval.EmbeddingStore import EmbeddingStore
+from gloomhaven_agent.retrieval.EmbeddingStore import EmbeddingStore
 import numpy as np
-from DataClasses.EmbeddedChunk import EmbeddedChunk
+from gloomhaven_agent.retrieval.EmbeddedChunk import EmbeddedChunk
 
 class Retriever:
     def __init__(self, embedding_store: EmbeddingStore, embed_model):

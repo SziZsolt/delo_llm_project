@@ -1,5 +1,5 @@
-from Classes.RAG.BaseRAGEngine import BaseRAGEngine
-from Classes.Tools.WebSearchTool import WebSearchTool
+from gloomhaven_agent.rag.BaseRAGEngine import BaseRAGEngine
+from gloomhaven_agent.tools.WebSearchTool import WebSearchTool
 
 class WebRAGEngine(BaseRAGEngine):
     def __init__(self, model):

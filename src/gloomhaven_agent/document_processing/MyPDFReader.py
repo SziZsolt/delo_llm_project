@@ -1,6 +1,6 @@
 from pypdf import PdfReader
 import re
-from DataClasses.Page import Page
+from gloomhaven_agent.document_processing.Page import Page
 
 class MyPDFReader:
     def __init__(self, file_path: str):

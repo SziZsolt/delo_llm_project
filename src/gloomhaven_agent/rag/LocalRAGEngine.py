@@ -1,6 +1,6 @@
-from Classes.RAG.BaseRAGEngine import BaseRAGEngine
-from Classes.Retrieval.Retriever import Retriever
-from DataClasses.EmbeddedChunk import EmbeddedChunk
+from gloomhaven_agent.rag.BaseRAGEngine import BaseRAGEngine
+from gloomhaven_agent.retrieval.Retriever import Retriever
+from gloomhaven_agent.retrieval.EmbeddedChunk import EmbeddedChunk
 
 class LocalRAGEngine(BaseRAGEngine):
     def __init__(self, retriever: Retriever, model):

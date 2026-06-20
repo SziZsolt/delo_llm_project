@@ -1,5 +1,5 @@
-from Classes.DocumentProcessing.Chunker import Chunker
-from DataClasses.EmbeddedChunk import EmbeddedChunk
+from gloomhaven_agent.document_processing.Chunker import Chunker
+from gloomhaven_agent.retrieval.EmbeddedChunk import EmbeddedChunk
 
 class EmbeddingStore:
     def __init__(self, chunker: Chunker, embed_model):

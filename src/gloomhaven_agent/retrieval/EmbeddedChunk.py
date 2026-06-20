@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from DataClasses.Chunk import Chunk
+from gloomhaven_agent.document_processing.Chunk import Chunk
 
 @dataclass
 class EmbeddedChunk:

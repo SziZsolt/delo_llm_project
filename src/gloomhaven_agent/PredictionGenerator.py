@@ -1,5 +1,5 @@
 import json
-from Classes.GloomHavenAgent.MyAgent import MyAgent
+from gloomhaven_agent.MyAgent import MyAgent
 
 class PredictionGenerator:
     def __init__(self, agent: MyAgent):

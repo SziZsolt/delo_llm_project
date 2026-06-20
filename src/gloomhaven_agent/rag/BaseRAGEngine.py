@@ -1,4 +1,4 @@
-from Classes.Tools.ResponseParser import ResponseParser
+from gloomhaven_agent.tools.ResponseParser import ResponseParser
 from abc import ABC, abstractmethod
 
 

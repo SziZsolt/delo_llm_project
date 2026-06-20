@@ -1,6 +1,6 @@
-from Classes.RAG.BaseRAGEngine import BaseRAGEngine
-from Classes.RAG.LocalRAGEngine import LocalRAGEngine
-from Classes.RAG.WebRAGEngine import WebRAGEngine
+from gloomhaven_agent.rag.BaseRAGEngine import BaseRAGEngine
+from gloomhaven_agent.rag.LocalRAGEngine import LocalRAGEngine
+from gloomhaven_agent.rag.WebRAGEngine import WebRAGEngine
 
 class MyAgent:
     def __init__(self, local_rag_engine: LocalRAGEngine,

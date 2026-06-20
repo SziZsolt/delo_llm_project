@@ -10,9 +10,7 @@ The solution combines:
 - Local rulebook-based reasoning
 - Web-search fallback
 - Structured JSON responses
-- Evaluation on a synthetic benchmark dataset
-
-The system was developed as part of a Junior AI Engineer technical assessment.
+- Evaluation on a synthetic dataset
 
 ---
 

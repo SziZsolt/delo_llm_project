@@ -1,5 +1,5 @@
-from Classes.BaseRAGEngine import BaseRAGEngine
-from Classes.WebSearchTool import WebSearchTool
+from Classes.RAG.BaseRAGEngine import BaseRAGEngine
+from Classes.Tools.WebSearchTool import WebSearchTool
 
 class WebRAGEngine(BaseRAGEngine):
     def __init__(self, model):

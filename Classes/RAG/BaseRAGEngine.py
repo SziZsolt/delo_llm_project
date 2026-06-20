@@ -1,4 +1,4 @@
-from Classes.ResponseParser import ResponseParser
+from Classes.Tools.ResponseParser import ResponseParser
 from abc import ABC, abstractmethod
 
 

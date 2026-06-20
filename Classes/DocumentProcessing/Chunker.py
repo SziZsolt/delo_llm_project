@@ -1,6 +1,6 @@
 from DataClasses.Page import Page
 from DataClasses.Chunk import Chunk
-from Classes.MyPDFReader import MyPDFReader
+from Classes.DocumentProcessing.MyPDFReader import MyPDFReader
 
 class Chunker:
     def __init__(self, pdf_reader: MyPDFReader, chunk_size: int, overlap: int):

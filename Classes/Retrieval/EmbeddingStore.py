@@ -1,4 +1,4 @@
-from Classes.Chunker import Chunker
+from Classes.DocumentProcessing.Chunker import Chunker
 from DataClasses.EmbeddedChunk import EmbeddedChunk
 
 class EmbeddingStore:

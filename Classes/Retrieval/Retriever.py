@@ -1,4 +1,4 @@
-from Classes.EmbeddingStore import EmbeddingStore
+from Classes.Retrieval.EmbeddingStore import EmbeddingStore
 import numpy as np
 from DataClasses.EmbeddedChunk import EmbeddedChunk
 

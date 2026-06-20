@@ -1,5 +1,5 @@
-from Classes.BaseRAGEngine import BaseRAGEngine
-from Classes.Retriever import Retriever
+from Classes.RAG.BaseRAGEngine import BaseRAGEngine
+from Classes.Retrieval.Retriever import Retriever
 from DataClasses.EmbeddedChunk import EmbeddedChunk
 
 class LocalRAGEngine(BaseRAGEngine):

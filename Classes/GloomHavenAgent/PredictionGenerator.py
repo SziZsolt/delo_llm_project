@@ -1,5 +1,5 @@
 import json
-from Classes.MyAgent import MyAgent
+from Classes.GloomHavenAgent.MyAgent import MyAgent
 
 class PredictionGenerator:
     def __init__(self, agent: MyAgent):

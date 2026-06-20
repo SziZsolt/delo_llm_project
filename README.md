@@ -137,3 +137,13 @@ Metrics:
 - Recall
 - F1 Score
 - Confusion Matrices
+
+
+## Conclusion
+
+The developed system successfully combines:
+- Retrieval-Augmented Generation
+- Rulebook-based reasoning
+- Web-search fallback
+
+Evaluation results indicate that retrieval quality is strong, while most remaining errors originate from the reasoning limitations of the small local language model.

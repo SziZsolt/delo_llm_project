@@ -15,7 +15,7 @@ class WebRAGEngine(BaseRAGEngine):
         return '\n\n---\n\n'.join(context_parts)
 
     def answer(self, question: str, top_k: int) -> dict:
-        web_results = self.WebSearchTool.search(f'Gloomhaven rules: {question}', max_results=top_k)
+        web_results = WebSearchTool.search(f'Gloomhaven rules: {question}', max_results=top_k)
         context = self.build_context(web_results)
         answer = self.answer_with_context(question, context)
         answer['source_type'] = 'web'

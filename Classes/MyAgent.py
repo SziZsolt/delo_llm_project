@@ -16,6 +16,8 @@ class MyAgent:
         self.fallback_explanation_keywords = ['not found','no relevant information',
                                               'insufficient information', 'unable to find',
                                               'not available']
+        self.web_keywords = ['reddit', 'community', 'forum', 'designer', 'interview',
+                             'opinion', 'consensus', 'online', 'discussion', 'players think']
 
     def fallback(self, local_answer: dict) -> bool:
         best_score = local_answer.get('best_retrieval_score', 0.0)
@@ -30,9 +32,11 @@ class MyAgent:
         return False
 
     def answer(self, question: str) -> dict:
-        local_answer = self.local_rag_engine.answer(question, self.local_top_k)
-        if not self.fallback(local_answer):
-            return local_answer
+        local_answer = ''
+        if not any(keyword in question for keyword in self.web_keywords):
+            local_answer = self.local_rag_engine.answer(question, self.local_top_k)
+            if not self.fallback(local_answer):
+                return local_answer
         web_answer = self.web_rag_engine.answer(question, self.web_top_k)
         web_answer['fallback_reason'] = 'Local retrieval insufficient, falling back to web search.'
         web_answer['local_answer'] = local_answer

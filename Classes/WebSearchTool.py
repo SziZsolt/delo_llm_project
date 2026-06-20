@@ -1,6 +1,5 @@
 from ddgs import DDGS
 
-
 class WebSearchTool:
     @staticmethod
     def search(query: str, max_results: int) -> list[dict]:
